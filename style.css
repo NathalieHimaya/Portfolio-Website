@@ -47,3 +47,48 @@ header{
     transform: scale(1,1);
     
 }
+
+a{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px
+}
+
+nav a:hover,
+nav a.active{
+    color: blue;
+    border-bottom: 3px solid blue
+
+}
+
+@media(max-width:995px){
+    nav{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid blue;
+        border-bottom-left-radius: 2rem;
+        padding: rem;
+        background-color: black;
+        border-top: 0.1 solid black;
+    }
+
+    nav.active{
+        display: block;
+    }
+}
+
+nav a{
+    display:block;
+    font-size: 2rem;
+    margin: 3rem 0;
+}
+
+nav a:hover,
+nav a.active{
+    padding: 1rem;
+}
