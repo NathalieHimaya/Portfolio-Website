@@ -5,6 +5,8 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    border: none;
+    outline: none;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -30,9 +32,9 @@ header{
     background-color: transparent;
     filter: drop-shadow(10px);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    z-index: 0;
+    z-index: 100;
 }
 
 .logo {
@@ -44,16 +46,16 @@ header{
 }
 
 .logo:hover{
-    transform: scale(1,1); 
+    transform:scale(1,1); 
 }
 
-a{
+nav a{
     font-size: 1.8rem;
     color: white;
     margin-left: 4rem;
     font-weight: 500;
     transition: 0.3s ease;
-    border-bottom: 3px
+    border-bottom: 3px solid transparent;
 }
 
 nav a:hover,
