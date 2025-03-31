@@ -119,6 +119,7 @@ section .main-container{
     justify-content: space-between;
     padding-left: 100px;
     align-items: center;
+    color: white;
 }
 
 .main-container .image{
@@ -127,4 +128,40 @@ section .main-container{
     border-radius: 100%;
     overflow: hidden;
     box-shadow: 0 0 50 px blue;
+}
+
+.main-container .image img{
+    width: 100%;
+}
+
+.main-container .image:hover{
+    animation: animate 1.5 ease-in-out infinite
+}
+
+@keyframes animate{
+0%{
+    scale: 1;
+}
+
+50%{
+    scale: 1.05;
+}
+
+100%{
+    scale: 1;
+}
+}
+
+.main-container .content{
+    color: white;
+    width: 40%
+}
+
+.content h1{
+    font-size: clamp(1rem, 1rem + 5vh, 1.8rem);
+}
+
+.content h1 span{
+    color: blue;
+    text-shadow: 0 0 10px;
 }
