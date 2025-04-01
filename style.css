@@ -3,7 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border=box;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     scroll-behavior: smooth;
@@ -12,7 +12,7 @@
 body{
     width: 100%;
     height: auto;
-    background-color: black;
+    background-color: #F5F1EB;
     overflow-x:hidden;
 }
 
@@ -37,8 +37,8 @@ nav{
 }
 
 .logo span{
-    color: blue;
-    text-shadow: 0 0 10px blue
+    color: #839146;
+    text-shadow: 0 0 10px #839146
 }
 
 .hamburg
@@ -47,7 +47,7 @@ nav{
     position: absolute;
     right: 15px;
     top: 10px;
-    color: white;
+    color: black;
     opacity: 0;
     pointer-events: none;
     font-size: clamp(2.5rem,0.5rem + 5vw, 3rem);
@@ -60,7 +60,7 @@ nav{
 .nav-container .links a{
     position: relative;
     font-size: 1.2rem;
-    color: white;
+    color: #91465d;
     margin: 0 20px;
     text-decoration: none ;
     font-weight: 550;
@@ -74,13 +74,17 @@ nav{
     left: 0;
     width: 0%;
     height: 3px;
-    background-color: blue;
+    background-color: #839146;
     transition: 0.2s linear;
 
 }
 
+.nav-container .links a:hover::before{
+    width: 100%;
+}
+
 .nav-container .links a:hover{
-    color: blue;
+    color: #839146;
 }
 
 .dropdown{
@@ -106,7 +110,7 @@ nav{
 }
 
 .dropdown .links a:hover{
-    color: blue;
+    color: #839146;
 }
 
 section{
@@ -119,7 +123,7 @@ section .main-container{
     justify-content: space-between;
     padding-left: 100px;
     align-items: center;
-    color: white;
+    
 }
 
 .main-container .image{
@@ -127,7 +131,7 @@ section .main-container{
     height: 80vh;
     border-radius: 100%;
     overflow: hidden;
-    box-shadow: 0 0 50 px blue;
+    box-shadow: 0 0 50 px #839146;
 }
 
 .main-container .image img{
@@ -135,7 +139,7 @@ section .main-container{
 }
 
 .main-container .image:hover{
-    animation: animate 1.5 ease-in-out infinite
+    animation: animate 1.5s ease-in-out infinite;
 }
 
 @keyframes animate{
@@ -153,7 +157,7 @@ section .main-container{
 }
 
 .main-container .content{
-    color: white;
+    color: #6F5840;
     width: 40%
 }
 
@@ -162,6 +166,34 @@ section .main-container{
 }
 
 .content h1 span{
-    color: blue;
+    color: #839146;
     text-shadow: 0 0 10px;
+}
+
+.content .typewriter{
+    font-size: clamp(1rem, 1rem + 2.5vw, 2.5rem);
+}
+.content .typewriter-text{
+    color: #839146;
+    text-shadow: 0 0 10 px #839146;
+}
+
+.content p{
+    font-size: clamp(0.4rem, 0.2rem + 9vh, 1rem);
+    margin: 10px 0;
+}
+
+.social-links i{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border: 0.2rem solid #839146;
+    border-radius: 50%;
+    color: #839146;
+    margin: 5px 15px;
+    font-size: 1.5rem;
+    transition: 0.2s linear;
 }
