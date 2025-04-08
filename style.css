@@ -204,7 +204,7 @@ section .main-container{
     margin-inline: auto;
     overflow: hidden;
 }
-
+ /*
 .social-links i{
     display:inline-flex;
     justify-content: center;
@@ -219,6 +219,7 @@ section .main-container{
     font-size: 1.5rem;
     transition: 0.2s linear;
 }
+
 
 .social-links i:hover{
     scale: 1.3;
