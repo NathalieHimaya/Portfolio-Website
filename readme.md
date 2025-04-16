@@ -1,4 +1,4 @@
-<h1>Web Practice</h1>
+<center><h1>Web Practice</h1>
 
 <h3>Info:</h3>
 <p>
@@ -7,3 +7,4 @@
  Though the project isn't finished,
  I've moved on to a separate project to determine my knowns and unknowns when it comes to coding in this language.
 </p>
+</center>
